@@ -1,4 +1,4 @@
-Python for Everybody Specialisation
+Python for Everybody Specialisation1
 Details on Specialisation
 This specialisation is by the University of Michigan on Coursera consisting of 4 courses and 1 capstone project.
 
