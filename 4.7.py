@@ -28,5 +28,6 @@ try:
     score= float(inp)
 except:
     print("Please type a score")
+    quit()
 
 computegrade(score)
