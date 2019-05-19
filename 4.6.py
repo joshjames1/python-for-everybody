@@ -1,19 +1,29 @@
 """Rewrite your pay computation with time and a half for overtime and create a function called computepay which takes two 
-parameters (horus and rate)"""
+parameters (hours and rate)"""
 
-hours= input("How many hours worked?")
-rate=input("What is the pay rate?")
-try:
-    hoursx= float(hours)
-    ratex= float(rate)
-    if hoursx > 40:
-        OThours= hoursx -40
-        OTPay= OThours * Ratex *1.5
-        RegularPay= 40 * ratex
+
+def computepay(hours,rate):
+    if hours > 40.0:
+        OThours= hours -40
+        OTPay= OThours * rate *1.5
+        RegularPay= 40 * rate
         GrossPay= OTPay + RegularPay
-        Print("Total amount paid:", GrossPay)
+        print("Total amount paid:", GrossPay)
     else:
-        GrossPay= hoursx * ratex
+        GrossPay= hours * rate
         print("Total amount paid:",GrossPay)
+    
+inphours= input("How many hours worked?")
+try:
+    hours= float(inphours)
 except:
-    print("Please enter numbers")
+    print("Not a number")
+    quit()
+inprate=input("What is the pay rate?")
+try:
+    rate= float(inprate)
+except:
+    print("Not a rate")
+    quit()
+    
+computepay(hours,rate)
