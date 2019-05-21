@@ -8,8 +8,7 @@ file, print out the average spam confidence. """
 #open file handle
 count=0
 total=0
-inp=input("Enter file name: ")
-fhand= open(inp)
+fhand=input("Enter file name: ")
 for line in fhand:
     line=line.strip() 
     if line.startswith("X-DSPAM-Confidence:"):
@@ -20,7 +19,6 @@ for line in fhand:
         count= count +1  #count the lines
 average= total/count
 print(count, average)
-
 
 
 #print contents one line at a time
