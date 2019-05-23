@@ -7,10 +7,12 @@ the resulting words in alphabetical order."""
 #check if word exists in list, if not, add it. 
 #sort list
 #print list
-list()  #create empty list
+list1=[] #create empty list
 fhand= open('romeo.txt')
 for line in fhand:
     listsplit= line.split()
-    list.extend(listsplit)
-    list.sort
-print(list)
+    for i in listsplit:
+        if i not in list1:
+            list1.append(i)
+list1.sort()
+print(list1)
